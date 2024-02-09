@@ -65,7 +65,10 @@ int main() {
                 break;
 
             // In case of 'D' or EOF stop the program
-            case ('D' || EOF):
+            case ('D'):
+                return 0;
+
+            case(EOF):
                 return 0;
         }
     }
